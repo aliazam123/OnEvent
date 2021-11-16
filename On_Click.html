@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>On Click</title>
+  <style type="text/css">
+        a{
+            text-decoration: none;
+            border: solid 2px;
+        }
+        a:hover{
+          background-color: #ff0000;
+          color: whitesmoke;
+        }
+    </style>
+</head>
+<body style="background-color: #00c6ff">
+
+    Name1: <input type="text" id="onclick"><br>
+    Name2: <input type="text" id="onclick1"><br><br> 
+
+    <button onclick="myFunction()">Copy Text</button>
+
+    <p style="color:whitesmoke;font-size: 22px;">A function is triggered when the button is clicked. The alert window will popup and the function copies the text from Name1 into Name2.</p>
+
+    <script>
+          function myFunction() {
+            document.getElementById("onclick1").value = document.getElementById("onclick").value;
+            alert("your name is"+" "+ document.getElementById("onclick").value);onclick     
+             }
+    </script>
+    <br><hr>
+    <a href="On_Blur.html">ONBLUR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="On_Focus.html">ONFOCUS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="On_Mouse.html">ON MOUSE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="On_Submit.html">ON SUBMIT</a>
+
+</body>
+</html>

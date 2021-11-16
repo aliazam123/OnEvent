@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>OnBlur Event</title>
+      <style type="text/css">
+          a{
+            text-decoration: none;
+            color: darkblue;
+            border: solid 2px;
+          }
+          a:hover{
+          background-color: green;
+          color: whitesmoke;
+        }
+      </style>
+  </head>
+<body style="background-color: grey;">
+    <center>
+        <h1 style="color:darkblue;">
+          ONBLUR EVENT
+      </h1>
+        <h2>Using HTML and Java Script</h2>
+        <input type="ONBLUR" id="ONBLUR">
+  
+        <script>
+            document.getElementById("ONBLUR").onblur = function() {
+                myFunction()
+                 document.getElementById("ONBLUR").style.background = "green";
+            };
+  
+            function myFunction() {
+                alert("Input field lost focus.");
+            }
+        </script><br><br><hr>
+        <a href="On_Click.html">ON CLICK</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="On_Focus.html">ON FOCUS</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="On_Mouse.html">ON MOUSE</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="On_Submit.html">ON SUBMIT</a>
+    </center>
+</body>
+  
+</html

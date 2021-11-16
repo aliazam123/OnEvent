@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ON MOUSE</title>
+        <style type="text/css">
+            a{
+                text-decoration: none;
+                color: darkblue;
+                border: solid 2px;
+             }
+            a:hover{
+                 background-color: #ff0087;
+                 color: whitesmoke;
+             }
+         </style>
+    </head>
+    <body style="background-color: #00ffd3">
+        
+        <script>
+            function bigImg(x) {
+            document.getElementById(x).style.height = "250px";
+            document.getElementById(x).style.width = "250px";
+            }
+            function normalImg(x) {
+            document.getElementById(x).style.height = "120px";
+            document.getElementById(x).style.width = "120px";
+            }
+        </script>
+
+        <img id = "pic" onmouseover="bigImg(this.id)"  onmouseout="normalImg(this.id)" src = "cofee.jpg" alt = "Smile">
+
+    
+        <p style="color:green;">The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+        <p style="color:brown;">The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+        <br><br><br><hr>
+
+        <a href="On_Blur.html">ON BLUR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="On_Click.html">ON CLICK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="On_Focus.html">ON FOCUS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="On_Submit.html">ON SUBMIT</a>
+
+
+</body>
+
+
+
+</html>

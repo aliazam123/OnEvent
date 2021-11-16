@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ONFOCUS EVENT</title>
+    <style type="text/css">
+        a{
+            text-decoration: none;
+            border: solid 2px;
+        }
+        a:hover{
+            background-color: #ff8400;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body style="background-color: #00ffad">
+    <center>
+        <h1 style="color: red">
+           Java Script
+        </h1>
+        <h2>On_Focus Event Using HTML & JAVASCRIPT</h2>
+        <br> Name:
+        <input type="text" id="fname">
+
+        <script>
+            document.getElementById("fname").onfocus = function () {
+                    myfunction();
+                };
+
+            function myfunction() {
+                document.getElementById("fname").style.backgroundColor ="blue";
+            }
+        </script>
+        <br><br><hr>
+        <a href="On_Blur.html">ON BLUR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="On_Click.html">ON CLICK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="On_Mouse.html">ON MOUSE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="On_Submit.html">ON SUBMIT</a>
+    </center>
+</body>
+
+</html>
